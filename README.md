@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://www.svender3d.de">
-    <img src="https://www.svender3d.de/assets/images/logo_svender3d.png" alt="Svender3D Logo" width="180"/>
+    <img src="https://svender3d.de/assets/images/favicon/logo_svender3d.png" alt="Svender3D Logo" width="180"/>
   </a>
 
   # Mach Schluss mit schlechten 3D-Drucken! 🚀
