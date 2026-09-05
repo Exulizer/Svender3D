@@ -20,7 +20,7 @@
 Svender3D ist darauf ausgelegt, Enthusiasten und Profis dabei zu helfen, ihre 3D-Druck-Workflows zu optimieren, Firmware (Klipper/Marlin) exakt abzustimmen und Ressourcen wie Filament effizient zu verwalten.
 
 ### 🛠️ Kern-Werkzeuge
-*   **Filament-Manager:** Ein intelligentes, hybrides Bestands-Tracking-Tool. 
+*   **Filament-Manager:** Ein intelligentes Bestands-Tracking-Tool. 
     *   *Lokal & Schnell:* Komplett ohne Registrierung lokal im Browser (via `localStorage`) nutzbar.
     *   *Cloud-Sync:* Mit kostenlosem Account nahtlose Synchronisation über alle Geräte hinweg. Behalte Gewichte, Kosten und Spulenfarben zentral im Blick.
 *   **LayerSpy:** Ein externes, spezialisiertes Analyse-Tool für detaillierte 3D-Druck-Parameter (https://layerspy.de/).
@@ -44,7 +44,7 @@ Das Projekt zeichnet sich durch extreme Geschwindigkeit und eine **Vanilla-Front
 *   **Frontend:** Pures HTML5, CSS3 (mit CSS Variables, Flexbox/Grid) und Vanilla JavaScript (ES6+).
 *   **Custom Routing:** Ein komplett eigenentwickeltes Vanilla-JS Routing-System (`simple-router.js`) sorgt für blitzschnelle, unterbrechungsfreie Seitenwechsel ohne lästige Reloads.
 *   **Modern UX:** Native CSS-Animationen (z.B. Swipe-Layouts beim Login), dynamische Content-Silos und ein Responsive Design, das auf dem Smartphone genauso gut funktioniert wie am Desktop.
-*   **Backend / Auth:** Serverseitige Prozesse werden durch PHP und eine tief integrierte [Supabase](https://supabase.com/) Datenbank (PostgreSQL, Row Level Security, JWT Authentication) abgewickelt.
+*   **Backend / API:** Serverseitige Prozesse, Authentifizierung und Datenbank-Synchronisation werden über ein performantes Custom PHP-Backend abgewickelt.
 *   **SEO:** Die Seite ist stark suchmaschinenoptimiert, unter anderem durch dynamisch injiziertes `Schema.org` JSON-LD und sauberes Tagging für Google-Crawling.
 
 ---
@@ -59,7 +59,7 @@ Die Welt des 3D-Drucks (speziell mit Klipper) kann komplex und unübersichtlich 
 
 Da dieses Tool ständig weiterentwickelt wird, ist Feedback extrem wertvoll! Wenn dir ein Fehler auffällt oder du eine Idee für einen neuen Generator hast:
 
-*   **Fehler melden:** Erstelle hier auf GitHub ein [Issue](https://github.com/DEIN-GITHUB-NAME/svender3d.de/issues) mit einer kurzen Beschreibung des Problems.
+*   **Fehler melden:** Erstelle hier auf GitHub ein Issue (über den Reiter "Issues" oben), um Fehler oder Ideen mitzuteilen.
 *   **Discord Server:** Tritt der [Svender3D Community auf Discord](https://discord.gg/3NGGNwAb5h) bei, um dich direkt auszutauschen.
 *   **Kontakt:** [www.svender3d.de/impressum.html](https://www.svender3d.de/impressum.html)
 
