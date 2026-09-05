@@ -1,51 +1,83 @@
 <div align="center">
-  <a href="https://www.svender3d.de">
-    <img src="https://svender3d.de/assets/images/favicon/logo_svender3d.png" alt="Svender3D Logo" width="180"/>
-  </a>
+  <img src="assets/images/logo_svender3d.png" alt="Svender3D Logo" width="200" height="auto" />
+  <h1>Svender3D - 3D Printing Tools & Generators</h1>
 
-  # Mach Schluss mit schlechten 3D-Drucken! 🚀
-  
-  **Kostenlose, smarte & werbefreie Werkzeuge für Maker, Klipper-Nerds und 3D-Druck-Enthusiasten.**
+  <p>
+    <strong>Eine umfangreiche Web-Plattform mit professionellen Werkzeugen, Kalkulatoren und Generatoren für die 3D-Druck Community.</strong>
+  </p>
 
-  [![Website](https://img.shields.io/badge/Website-Svender3D.de-46739D?style=for-the-badge&logo=google-chrome)](https://www.svender3d.de)
-  [![100% Free](https://img.shields.io/badge/100%25-Kostenlos-28a745?style=for-the-badge)](#)
-  [![No Ads](https://img.shields.io/badge/Keine-Werbung-dc3545?style=for-the-badge)](#)
+  <p>
+    <a href="https://www.svender3d.de">Live-Version ansehen</a> •
+    <a href="https://layerspy.de/">LayerSpy</a> •
+    <a href="https://meshdoc.svender3d.de/">MeshDoc</a>
+  </p>
 </div>
 
 ---
 
-## 🛑 Kennst du das?
-Du hast stundenlang kalibriert, aber die Ecken deines Drucks wölben sich immer noch auf? Du willst ein Teil für einen Freund oder Kunden drucken und weißt nicht, wie viel du berechnen sollst? Oder dein Flow stimmt einfach nicht?
+## 🌟 Übersicht & Features
 
-**Schluss mit dem Raten.** Ich habe [Svender3D](https://www.svender3d.de) gebaut, um genau diese Probleme mit smarter Mathematik und sauberem Code zu lösen.
+Svender3D ist darauf ausgelegt, Enthusiasten und Profis dabei zu helfen, ihre 3D-Druck-Workflows zu optimieren, Firmware (Klipper/Marlin) exakt abzustimmen und Ressourcen wie Filament effizient zu verwalten.
 
-## 🛠️ Deine Werkzeugkiste (Ohne Anmeldung, direkt nutzbar)
+### 🛠️ Kern-Werkzeuge
+*   **Filament-Manager:** Ein intelligentes, hybrides Bestands-Tracking-Tool. 
+    *   *Lokal & Schnell:* Komplett ohne Registrierung lokal im Browser (via `localStorage`) nutzbar.
+    *   *Cloud-Sync:* Mit kostenlosem Account nahtlose Synchronisation über alle Geräte hinweg. Behalte Gewichte, Kosten und Spulenfarben zentral im Blick.
+*   **LayerSpy:** Ein externes, spezialisiertes Analyse-Tool für detaillierte 3D-Druck-Parameter (https://layerspy.de/).
+*   **MeshDoc:** Die ultimative Dokumentations-Suite für 3D-Modelle und Druck-Meshes (https://meshdoc.svender3d.de/).
 
-Hier sind meine leistungsstärksten Rechner – jeder Klick führt dich direkt zum Tool:
+### 🖨️ Generatoren & Kalkulatoren
+*   **PID-Tuning Generator:** Schnelle Code-Generierung für Temperatur-Kalibrierung.
+*   **Flow-Rate / Extrusions-Kalkulatoren:** Inklusive Sweetspot-Generator für den perfekten Materialfluss.
+*   **Kostenrechner:** Exakte Kalkulation von Druckkosten basierend auf Filament-Verbrauch und Druckzeit.
 
-* 💸 **[Der ultimative Filament-Kostenrechner](https://www.svender3d.de/generators.html?generator=filament-cost-calculator)**  
-  *Berechne auf den Cent genau, was dein Druck kostet (inklusive Strom, Verschleiß, Fehldruckrate und deiner Gewinnmarge).*
-
-* 🌊 **[Flow-Rate Kalibrierung](https://www.svender3d.de/generators.html?generator=flow-generator)**  
-  *Schluss mit Unter- oder Überextrusion. Optimiere deinen Flow für spiegelglatte Oberflächen.*
-
-* 🔥 **[PID-Tuning Generator (Klipper & Marlin)](https://www.svender3d.de/generators.html?generator=pid-generator)**  
-  *Generiert dir mit einem Klick die perfekten G-Code Befehle, um dein Hotend und Heizbett zu kalibrieren.*
-
-* 📐 **[SCV (Square Corner Velocity) Rechner](https://www.svender3d.de/generators.html?generator=scv-generator)**  
-  *Eliminiere Ringing und Ghosting an Ecken für perfekte Druckqualität unter Klipper.*
-
-* 📏 **[E-Steps & XYZ-Maßhaltigkeit](https://www.svender3d.de/generators.html?generator=xyz-step-generator)**  
-  *Damit gedruckte Teile endlich maßgenau ineinander passen.*
+### 📖 Blog & Tipps
+Eine integrierte Wissensdatenbank mit detaillierten Anleitungen, Hardware-Tipps und Software-Updates rund um das Thema Klipper und 3D-Druck.
 
 ---
 
-### 💡 Warum mache ich das?
-Ich liebe den 3D-Druck, hasse aber Webseiten voller blinkender Werbung und versteckten Paywalls. Deshalb ist [Svender3D.de](https://www.svender3d.de) mein Herzensprojekt: Eine extrem schnelle, cleane Plattform von einem Maker für Maker.
+## 💻 Tech-Stack
 
-👉 **[Schau auf meinem 3D-Druck Blog vorbei](https://www.svender3d.de/blog.html)** für detaillierte Tutorials zu Klipper, Hardware-Upgrades und Slicer-Einstellungen.
+Das Projekt ist als leichtgewichtige, hochperformante **Vanilla-Frontend-Architektur** (Single Page Application Ansatz) aufgebaut, die rasend schnell lädt und Suchmaschinen-optimiert (SEO) ist:
 
+*   **Frontend:** HTML5, CSS3 (mit CSS Variables, Flexbox/Grid), Vanilla JavaScript (ES6+).
+*   **Routing & SEO:** Eigenes Vanilla-JS basiertes Routing (`simple-router.js`) für blitzschnelle Seitenwechsel, kombiniert mit serverseitigen Fallbacks und dynamisch injiziertem `Schema.org` JSON-LD für optimales Google-Crawling.
+*   **Backend / Auth / Database:** [Supabase](https://supabase.com/) (PostgreSQL, Row Level Security, JWT Authentication).
+*   **UI / UX:** Moderne Design-Patterns, flüssige CSS-Swipe-Animationen (z.B. im Auth-Bereich), komplett responsiv gestaltet für Desktop, Tablet und Smartphone.
+
+---
+
+## 🚀 Lokale Installation & Entwicklung
+
+Das Frontend benötigt keine komplizierten Build-Prozesse (wie Webpack oder Node.js) und kann in Sekunden lokal ausgeführt werden:
+
+1.  **Repository klonen:**
+    ```bash
+    git clone https://github.com/DEIN-GITHUB-NAME/svender3d.de.git
+    cd svender3d.de
+    ```
+
+2.  **Entwicklungsserver starten:**
+    Da die App Vanilla JS Fetch-Requests nutzt, wird ein simpler lokaler Webserver benötigt, um CORS-Fehler (bei `file://` Aufrufen) zu vermeiden.
+    *   *Mit Python:* `python -m http.server 8000`
+    *   *Mit VS Code:* Nutze die Extension "Live Server" und klicke auf "Go Live"
+    *   *Mit PHP:* `php -S localhost:8000`
+
+3.  **App öffnen:** 
+    Navigiere im Browser zu `http://localhost:8000`
+
+> **Hinweis:** Für die vollständige Cloud-Funktionalität des Filament-Managers und das Login/Registrierungs-System wird eine aktive Supabase-Anbindung (`assets/js/supabase-client.min.js` & `api/`) vorausgesetzt. Ohne Datenbank-Verbindung läuft die App reibungslos im lokalen Fallback-Modus (`json/`-Ordner & `localStorage`)!
+
+---
+
+## 🤝 Kontakt & Community
+
+Tritt der Community bei oder melde Fehler und Feature-Wünsche direkt über GitHub!
+
+*   **Discord Server:** [Svender3D Community](https://discord.gg/3NGGNwAb5h)
+*   **Impressum & Kontakt:** [www.svender3d.de/impressum.html](https://www.svender3d.de/impressum.html)
+
+---
 <div align="center">
-  <br>
-  <i>Gefallen dir die Tools? Nutze sie für deine Projekte und teile die Seite mit deinen Maker-Freunden!</i>
+  <em>Entwickelt mit Leidenschaft für die 3D-Druck Community.</em>
 </div>
