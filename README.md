@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/images/logo_svender3d.png" alt="Svender3D Logo" width="200" height="auto" />
+  <img src="https://www.svender3d.de/assets/images/logo_svender3d.png" alt="Svender3D Logo" width="200" />
   <h1>Svender3D - 3D Printing Tools & Generators</h1>
 
   <p>
