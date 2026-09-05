@@ -9,7 +9,7 @@
   <p>
     <a href="https://www.svender3d.de">Live-Version ansehen</a> •
     <a href="https://layerspy.de/">LayerSpy</a> •
-    <a href="https://meshdoc.svender3d.de/">MeshDoc</a>
+    <a href="https://www.meshdoc.de/">MeshDoc</a>
   </p>
 </div>
 
@@ -24,7 +24,7 @@ Svender3D ist darauf ausgelegt, Enthusiasten und Profis dabei zu helfen, ihre 3D
     *   *Lokal & Schnell:* Komplett ohne Registrierung lokal im Browser (via `localStorage`) nutzbar.
     *   *Cloud-Sync:* Mit kostenlosem Account nahtlose Synchronisation über alle Geräte hinweg. Behalte Gewichte, Kosten und Spulenfarben zentral im Blick.
 *   **LayerSpy:** Ein externes, spezialisiertes Analyse-Tool für detaillierte 3D-Druck-Parameter (https://layerspy.de/).
-*   **MeshDoc:** Die ultimative Dokumentations-Suite für 3D-Modelle und Druck-Meshes (https://meshdoc.svender3d.de/).
+*   **MeshDoc:** Die ultimative Dokumentations-Suite für 3D-Modelle und Druck-Meshes (https://www.meshdoc.de/).
 
 ### 🖨️ Generatoren & Kalkulatoren
 *   **PID-Tuning Generator:** Schnelle Code-Generierung für präzise Temperatur-Kalibrierung von Hotend und Druckbett.
