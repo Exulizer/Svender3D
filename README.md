@@ -27,55 +27,51 @@ Svender3D ist darauf ausgelegt, Enthusiasten und Profis dabei zu helfen, ihre 3D
 *   **MeshDoc:** Die ultimative Dokumentations-Suite für 3D-Modelle und Druck-Meshes (https://meshdoc.svender3d.de/).
 
 ### 🖨️ Generatoren & Kalkulatoren
-*   **PID-Tuning Generator:** Schnelle Code-Generierung für Temperatur-Kalibrierung.
-*   **Flow-Rate / Extrusions-Kalkulatoren:** Inklusive Sweetspot-Generator für den perfekten Materialfluss.
-*   **Kostenrechner:** Exakte Kalkulation von Druckkosten basierend auf Filament-Verbrauch und Druckzeit.
+*   **PID-Tuning Generator:** Schnelle Code-Generierung für präzise Temperatur-Kalibrierung von Hotend und Druckbett.
+*   **Flow-Rate / Sweetspot-Generator:** Finde den perfekten Materialfluss und extrudiere exakt die richtige Menge Filament.
+*   **Kostenrechner:** Berechne auf den Cent genau, was dein gedrucktes Bauteil inklusive Material, Strom und Verschleiß kostet.
+*   **XYZ-Steps & Belt-Tension:** Spezifische Tools zur mechanischen Kalibrierung deiner Drucker-Achsen.
 
 ### 📖 Blog & Tipps
-Eine integrierte Wissensdatenbank mit detaillierten Anleitungen, Hardware-Tipps und Software-Updates rund um das Thema Klipper und 3D-Druck.
+Eine integrierte Wissensdatenbank mit detaillierten Anleitungen, Hardware-Tipps und Software-Updates rund um das Thema Klipper und 3D-Druck. Alle Artikel sind eng mit den jeweiligen Generatoren verknüpft (Silo-Struktur).
 
 ---
 
-## 💻 Tech-Stack
+## ⚡ Performance & Architektur (Tech-Stack)
 
-Das Projekt ist als leichtgewichtige, hochperformante **Vanilla-Frontend-Architektur** (Single Page Application Ansatz) aufgebaut, die rasend schnell lädt und Suchmaschinen-optimiert (SEO) ist:
+Das Projekt zeichnet sich durch extreme Geschwindigkeit und eine **Vanilla-Frontend-Architektur** aus. Es wurde bewusst auf große Frameworks wie React oder Vue verzichtet, um maximale Performance und sofortige Ladezeiten zu garantieren:
 
-*   **Frontend:** HTML5, CSS3 (mit CSS Variables, Flexbox/Grid), Vanilla JavaScript (ES6+).
-*   **Routing & SEO:** Eigenes Vanilla-JS basiertes Routing (`simple-router.js`) für blitzschnelle Seitenwechsel, kombiniert mit serverseitigen Fallbacks und dynamisch injiziertem `Schema.org` JSON-LD für optimales Google-Crawling.
-*   **Backend / Auth / Database:** [Supabase](https://supabase.com/) (PostgreSQL, Row Level Security, JWT Authentication).
-*   **UI / UX:** Moderne Design-Patterns, flüssige CSS-Swipe-Animationen (z.B. im Auth-Bereich), komplett responsiv gestaltet für Desktop, Tablet und Smartphone.
-
----
-
-## 🚀 Lokale Installation & Entwicklung
-
-Das Frontend benötigt keine komplizierten Build-Prozesse (wie Webpack oder Node.js) und kann in Sekunden lokal ausgeführt werden:
-
-1.  **Repository klonen:**
-    ```bash
-    git clone https://github.com/DEIN-GITHUB-NAME/svender3d.de.git
-    cd svender3d.de
-    ```
-
-2.  **Entwicklungsserver starten:**
-    Da die App Vanilla JS Fetch-Requests nutzt, wird ein simpler lokaler Webserver benötigt, um CORS-Fehler (bei `file://` Aufrufen) zu vermeiden.
-    *   *Mit Python:* `python -m http.server 8000`
-    *   *Mit VS Code:* Nutze die Extension "Live Server" und klicke auf "Go Live"
-    *   *Mit PHP:* `php -S localhost:8000`
-
-3.  **App öffnen:** 
-    Navigiere im Browser zu `http://localhost:8000`
-
-> **Hinweis:** Für die vollständige Cloud-Funktionalität des Filament-Managers und das Login/Registrierungs-System wird eine aktive Supabase-Anbindung (`assets/js/supabase-client.min.js` & `api/`) vorausgesetzt. Ohne Datenbank-Verbindung läuft die App reibungslos im lokalen Fallback-Modus (`json/`-Ordner & `localStorage`)!
+*   **Frontend:** Pures HTML5, CSS3 (mit CSS Variables, Flexbox/Grid) und Vanilla JavaScript (ES6+).
+*   **Custom Routing:** Ein komplett eigenentwickeltes Vanilla-JS Routing-System (`simple-router.js`) sorgt für blitzschnelle, unterbrechungsfreie Seitenwechsel ohne lästige Reloads.
+*   **Modern UX:** Native CSS-Animationen (z.B. Swipe-Layouts beim Login), dynamische Content-Silos und ein Responsive Design, das auf dem Smartphone genauso gut funktioniert wie am Desktop.
+*   **Backend / Auth:** Serverseitige Prozesse werden durch PHP und eine tief integrierte [Supabase](https://supabase.com/) Datenbank (PostgreSQL, Row Level Security, JWT Authentication) abgewickelt.
+*   **SEO:** Die Seite ist stark suchmaschinenoptimiert, unter anderem durch dynamisch injiziertes `Schema.org` JSON-LD und sauberes Tagging für Google-Crawling.
 
 ---
 
-## 🤝 Kontakt & Community
+## 🎯 Die Vision (Warum Svender3D?)
 
-Tritt der Community bei oder melde Fehler und Feature-Wünsche direkt über GitHub!
+Die Welt des 3D-Drucks (speziell mit Klipper) kann komplex und unübersichtlich sein. Svender3D wurde mit dem Ziel geschaffen, **alles an einem Ort zu bündeln**: Statt fünf verschiedene Excel-Tabellen für Druckkosten, Flow-Berechnung und Filament-Management nutzen zu müssen, bietet Svender3D eine saubere, moderne und zentralisierte Web-App. Es ist ein Projekt "von der Community, für die Community".
 
-*   **Discord Server:** [Svender3D Community](https://discord.gg/3NGGNwAb5h)
-*   **Impressum & Kontakt:** [www.svender3d.de/impressum.html](https://www.svender3d.de/impressum.html)
+---
+
+## 🤝 Support, Fehler & Feedback
+
+Da dieses Tool ständig weiterentwickelt wird, ist Feedback extrem wertvoll! Wenn dir ein Fehler auffällt oder du eine Idee für einen neuen Generator hast:
+
+*   **Fehler melden:** Erstelle hier auf GitHub ein [Issue](https://github.com/DEIN-GITHUB-NAME/svender3d.de/issues) mit einer kurzen Beschreibung des Problems.
+*   **Discord Server:** Tritt der [Svender3D Community auf Discord](https://discord.gg/3NGGNwAb5h) bei, um dich direkt auszutauschen.
+*   **Kontakt:** [www.svender3d.de/impressum.html](https://www.svender3d.de/impressum.html)
+
+---
+
+## ⚖️ Lizenz & Copyright
+
+**Copyright © 2026 Svender3D (Sven Enders). Alle Rechte vorbehalten.**
+
+Der Quellcode in diesem Repository dient ausschließlich zu Anschauungs- und Lernzwecken. Das Kopieren, Verändern, Verbreiten oder die Nutzung des Codes (auch in Teilen) für eigene private oder kommerzielle Projekte ist **ohne ausdrückliche schriftliche Genehmigung untersagt**. 
+
+Weitere Details findest du in der [LICENSE](LICENSE) Datei.
 
 ---
 <div align="center">
